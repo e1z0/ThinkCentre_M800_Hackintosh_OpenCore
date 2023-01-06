@@ -59,7 +59,7 @@ This tutorial assumes that you are already running MacOS computer. This can be e
 * Copy **OpenCore EFI folder** to flash disk `cp -r OpenCore/EFI /Volumes/EFI/EFI`
 * **Unmount** the flash disk partitions `diskutil unmountDisk disk5`
 * **Remove the flash disk** and insert it to target computer, select to **boot from USB disk**.
-* Press **<Space>** on Install MacOS item, more options will show
+* Press **Space** on Install MacOS item, more options will show
 * Select **GrubMod**
 * Type `setup_var 0x197 0x00` and `reboot` this should unlock the MSR2 
 * After reboot load again and select MacOS Install.
@@ -124,14 +124,14 @@ Left others in the default 3 identifier. Personally i'm using configuration only
 I don't have Wireless or bluetooth in my model, so can't confirm anything. But I heard that for Wireless and Bluetooth you need to buy the [BCM94360NG](https://www.aliexpress.com/item/4000632365086.html) and add the following to your OC `config.plist` **DeviceProperties** 
 section:
 ```
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,28,0/0,0</string>
-				<key>device_type</key>
-				<string>Network controller</string>
-				<key>model</key>
-				<string>BCM4360NG WiFi Fenvi</string>
-			</dict>
+<dict>
+	<key>AAPL,slot-name</key>
+	<string>Internal@0,28,0/0,0</string>
+	<key>device_type</key>
+	<string>Network controller</string>
+	<key>model</key>
+	<string>BCM4360NG WiFi Fenvi</string>
+</dict>
 ```
 
 
