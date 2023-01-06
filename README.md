@@ -28,34 +28,20 @@ Small machine, great specs, low energy consumption (espacially actual in Europe 
 
 # Pictures
 
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_2.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_3.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_4.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_5.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_6.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_7.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_8.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_9.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_10.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_11.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_12.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_13.jpeg" width="400"/>
-<img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/thinkcentre_m800_macos_14.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_2.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_3.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_4.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_5.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_6.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_7.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_8.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_9.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_10.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_11.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_12.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_13.jpeg" width="400"/>
+<img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/thinkcentre_m800_macos_14.jpeg" width="400"/>
 
 # How Install ?
 
@@ -63,10 +49,8 @@ This tutorial assumes that you are already running MacOS computer. This can be e
 
 * Update your BIOS, use tutorial down here in this README.
 * Create USB Flash Disk, open DiskUtility, press CMD+2 then select your target flash disk and left click Erase.
-* Select Mac OS Extended (Journaled) and GUID Partition Map. This will create two paritions. <img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/diskutility_pic.png" width="400"/>
-* Open Terminal and run command `diskutil` you will need to know usb flash disk EFI partition identifier, in my case it will be disk5s1 <img src="https://github.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore
-/raw/master/pics/diskutil_pic.png" width="400"/>
+* Select Mac OS Extended (Journaled) and GUID Partition Map. This will create two paritions. <img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/diskutility_pic.png" width="400"/>
+* Open Terminal and run command `diskutil` you will need to know usb flash disk EFI partition identifier, in my case it will be disk5s1 <img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/diskutil_pic.png" width="400"/>
 * Mount flash disk EFI partition `sudo mkdir /Volumes/EFI;sudo mount -t msdos /dev/disk5s1 /Volumes/EFI`
 * Copy OpenCore EFI folder to flash disk `cp -r OpenCore/EFI /Volumes/EFI/EFI`
 * Unmount the flash disk partitions `diskutil unmountDisk disk5`
