@@ -18,7 +18,7 @@ Small machine, great specs, low energy consumption (_espacially actual in Europe
 | Device | Status |
 |------------|-----------------------------------------|
 | VGA        | Working with hardware acceleration      |
-| Audio      | Working, only DP->HDMI tested           |
+| Audio      | Working, DP->DP, DP->HDMI tested        |
 | Lan        | Working                                 |
 | Wifi       | If you need wifi/bt please read further |
 | Sleep      | Not working yet                         |
@@ -50,7 +50,11 @@ This tutorial assumes that you are already running MacOS computer. This can be e
 * **Update your BIOS**, use tutorial down here in this **README**.
 * **Create USB Flash Disk**, open **DiskUtility**, press **CMD+2** then select your target flash disk and left click **Erase**.
 * Select **Mac OS Extended (Journaled)** and **GUID** Partition Map. This will create two paritions. <img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/diskutility_pic.png" width="400"/>
-* Open Terminal and run command `diskutil` you will need to know usb flash disk **EFI partition identifier**, in my case it will be **disk5s1** <img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/diskutil_pic.png" width="400"/>
+* Open Terminal and download the script `wget https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py`
+* Run script and fetch the wanted MacOS version from the shown list `sudo python3 installinstallmacos.py` <img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/macos_installer.png" width="400"/>
+* The **.dmg** disk image will be created in the same directory, double click and mount it
+* Create MacOS Installation USB `sudo /Volumes/Install\ macOS\ Monterey/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`
+* Run command `diskutil`, you will need to know usb flash disk **EFI partition identifier**, in my case it will be **disk5s1** <img src="https://raw.githubusercontent.com/e1z0/ThinkCentre_M800_Hackintosh_OpenCore/master/pics/diskutil_pic.png" width="400"/>
 * Mount flash disk **EFI partition** `sudo mkdir /Volumes/EFI;sudo mount -t msdos /dev/disk5s1 /Volumes/EFI`
 * Copy **OpenCore EFI folder** to flash disk `cp -r OpenCore/EFI /Volumes/EFI/EFI`
 * **Unmount** the flash disk partitions `diskutil unmountDisk disk5`
